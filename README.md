@@ -165,6 +165,10 @@ WebSocket connection.
 
 After an endpoint has both sent and received a close frame, the closing handshake is complete, and the WebSocket connection is considered closed. 
 
-# Create a websocket demo
+# Websocket Demo
 
-I want to understand the API of the `golang.org/x/net/websocket` package so I have used this package to create an echo server and also written some client code to connect to this server, send a message and receive a message.
+I want to understand the APIs of the following websocket packages:
+* `golang.org/x/net/websocket`  
+* `nhooyr.io/websocket` 
+
+I have used both these package to create a client and server. When the client sends a message to the server, it is read and the server sends the same message back to the client.

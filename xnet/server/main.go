@@ -24,11 +24,11 @@ func Echo(ws *websocket.Conn) {
 
 		fmt.Println("sending message to client")
 		err := websocket.Message.Send(ws, msg)
-        if err == nil {
-            fmt.Println("message sent ok")
-            break
-        }
-        fmt.Printf("error sending: %+v", err)
+		if err == nil {
+			fmt.Println("message sent ok")
+			break
+		}
+		fmt.Printf("error sending: %+v", err)
 	}
 }
 

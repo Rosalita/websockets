@@ -11,7 +11,7 @@ type Message struct {
 	Message string `json:"message"`
 }
 
-func main(){
+func main() {
 
 	url := "ws://localhost:1234/"
 	conn, err := websocket.Dial(url, "", url)
